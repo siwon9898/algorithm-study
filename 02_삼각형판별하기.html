@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(a, b, c) {
+        // let answer;
+        // let arr = [a, b, c];
+        // let newArr = [];
+
+        // let sum = 0;
+        // let max = Math.max.apply(null, arr);
+
+        // newArr = arr.pop(max);
+        // for (let i = 0; i < newArr.length; i++) {
+        //   sum += newArr[i];
+        // }
+
+        // if (max < sum) {
+        //   answer = "YES";
+        // } else {
+        //   answer = "NO";
+        // }
+
+        //너무어렵게생각하지말자 !!!!
+        let answer = "yes",
+          max;
+        let sum = a + b + c;
+        max = Math.max(a, b, c);
+        if (sum - max <= max) {
+          answer = "no";
+        }
+
+        return answer;
+      }
+
+      console.log(solution(13, 33, 17));
+    </script>
+  </body>
+</html>
