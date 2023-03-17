@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(s) {
+        let answer = "";
+        let string = [...str];
+        let arr = [];
+
+        string.forEach((e) => {
+          if (e === "A") {
+            arr.push("#");
+          } else {
+            arr.push(e);
+          }
+        });
+
+        answer = arr.join(""); // join은 배열을 string으로 반환해주고, 파라미터를 ""로 주면 comma없애줌
+        return answer;
+
+        //   for(let x of s) {
+        //     if(x === 'A'){
+        //       answer+='#'
+        //   }
+        //   else {
+        //     answer += x;
+        //   }
+        // }
+
+        // return answer;
+      }
+      let str = "BANANA";
+      console.log(solution(str));
+    </script>
+  </body>
+</html>

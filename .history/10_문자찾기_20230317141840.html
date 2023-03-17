@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(s, t) {
+        // let answer = 0;
+
+        // for (let x of s) {
+        //   if (x === t) {
+        //     answer++;
+        //   }
+        // }
+
+        let answer = s.split(t).length - 1; //구분자가 t임, 마지막 문자에 t가 있더라도 뒤에 빈 문자열이 하나 생김
+        return answer;
+      }
+
+      let str = "COMPUTERPROGRAMMING";
+      console.log(solution(str, "R"));
+    </script>
+  </body>
+</html>
